@@ -18,7 +18,7 @@ mydat = read.csv(url, header = TRUE)
 
 #plot the data
 plot(x = mydat$Year, y = mydat$Adjusted.Minimum.Wage, xlab = "Year",
-     ylab = "Minimum Wage in Dollars/Hour",
+     ylab = "Minimum Wage (Dollars/Hour)",
      main = "Actual Minimum Wage vs COLA Minimum Wage", type = "l", pch = 21, col = "blue", lwd = 2)
 lines(x = mydat$Year, y = mydat$Actaul.Minimum.Wage, type = "s", col = "red", lwd =2)
 legend(1976, 10, legend = c("Actual Minimum Wage", "COLA Minimum Wage"),
