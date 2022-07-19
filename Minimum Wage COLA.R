@@ -20,3 +20,4 @@ mydat = read.csv(url, header = TRUE)
 plot(x = mydat$Year, y = mydat$Adjusted.Minimum.Wage, xlab = "Year",
      ylab = "Minimum Wage in Dollars/Hour",
      main = "Actual Minimum Wage vs COLA Minimum Wage", type = "l", pch = 21, col = "blue", lwd = 2)
+lines(x = mydat$Year, y = mydat$Actaul.Minimum.Wage, type = "s", col = "red", lwd =2)
