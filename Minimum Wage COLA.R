@@ -21,3 +21,5 @@ plot(x = mydat$Year, y = mydat$Adjusted.Minimum.Wage, xlab = "Year",
      ylab = "Minimum Wage in Dollars/Hour",
      main = "Actual Minimum Wage vs COLA Minimum Wage", type = "l", pch = 21, col = "blue", lwd = 2)
 lines(x = mydat$Year, y = mydat$Actaul.Minimum.Wage, type = "s", col = "red", lwd =2)
+legend(1976, 10, legend = c("Actual Minimum Wage", "COLA Minimum Wage"),
+       col = c("red", "blue"), lty = 1:1, cex = 0.8, lwd = 2)
