@@ -15,3 +15,8 @@ url = "https://raw.githubusercontent.com/ryantvackner/minimum-wage-cola/main/Min
 
 #read csv file from github
 mydat = read.csv(url, header = TRUE)
+
+#plot the data
+plot(x = mydat$Year, y = mydat$Adjusted.Minimum.Wage, xlab = "Year",
+     ylab = "Minimum Wage in Dollars/Hour",
+     main = "Actual Minimum Wage vs COLA Minimum Wage", type = "l", pch = 21, col = "blue", lwd = 2)
